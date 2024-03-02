@@ -26,13 +26,40 @@ body {
     text-align: center;
     color: aqua;
     font-size: 30px;
-    border-radius: 50px;
-    padding: 5px 5px;
+    border-radius: 50px;    
+    padding: 50px 50px;
     box-shadow: aqua 1px 0 25px;
-    transition: all;
+    transition: transform 1s;
   }
 
-.grid-container button:hover {
-    transform: scale(1.01);
-    cursor: grab;
+.grid-container .playButton:hover {
+    transform: perspective(500px) rotateY(45deg);
+    cursor: pointer;
+}
+
+.grid-container .playButton2:hover {
+    transform: perspective(500px) rotateY(-45deg);
+    cursor: pointer;
+}
+
+.BigButton {
+    display: flex;
+    justify-content: center;
+}
+
+.BigButton button {
+    background-color: red;
+    border: 1px black;
+    text-align: center;
+    color: black;
+    font-size: 100px;
+    border-radius: 50px;
+    padding: 50px 50px;
+    box-shadow: red 1px 0 25px;
+    transition: transform 1s;
+}
+
+.BigButton button:hover {
+    transform: perspective(500px) scaleY(0.7) rotate3d(0, 1 ,1 , 50deg) translateX(1000px);
+    cursor: pointer;
 }
