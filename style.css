@@ -67,6 +67,6 @@ body {
 }
 
 .BigButton button:hover {
-    transform: perspective(500px) scaleY(0.7) rotate3d(0, 1 ,1 , 50deg) translateX(700px);
+    transform: perspective(500px) scaleY(0.7) rotate3d(0, 1 ,1 , 50deg) translateX(1000px);
     cursor: pointer;
 }
