@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     var videoUrls = [
-        "Music/Indian_Music.mp4",
+        "Music/classical.mov",
         "Music/kpop.mov",
-        "Music/sleeping.mov"
+        "Music/sleeping.mov",
+        "Music/workout.mov"
     ];
 
     function playRandomVideo() {
@@ -25,25 +26,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var videoUrls = [
-        "Music/Indian_Music.mp4"
-    ];
 
-    function playRandomVideo() {
-        var randomIndex = Math.floor(Math.random() * videoUrls.length);
-        var randomVideoUrl = videoUrls[randomIndex];
+    function playVideo() {
+        var newTab = window.open("Music/Indian_Music.mp4", '_blank');
+        newTab.focus();
         
-        var newTab = window.open(randomVideoUrl, '_blank');
-        if (newTab) {
-            newTab.focus();
-        }
     }
 
     var buttons = document.querySelectorAll(".BigButton button");
 
     buttons.forEach(function(button) {
         button.addEventListener("click", function() {
-            playRandomVideo();
+            playVideo();
         });
     });
 });

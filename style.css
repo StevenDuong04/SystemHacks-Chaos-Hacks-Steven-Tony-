@@ -12,6 +12,10 @@ body {
     padding: 10px 10px 10px 40px;
 }
 
+.title h2 {
+    color: aquamarine;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -21,6 +25,7 @@ body {
 }
 
 .grid-container button {
+    font-family: Comic Sans MS;
     background-color: rgba(0, 255, 234, 0.8);
     border: 1px  black;
     text-align: center;
@@ -45,9 +50,11 @@ body {
 .BigButton {
     display: flex;
     justify-content: center;
+    padding-top: 1000px;
 }
 
 .BigButton button {
+    font-family: Comic Sans Ms;
     background-color: red;
     border: 1px black;
     text-align: center;
@@ -60,6 +67,6 @@ body {
 }
 
 .BigButton button:hover {
-    transform: perspective(500px) scaleY(0.7) rotate3d(0, 1 ,1 , 50deg) translateX(1000px);
+    transform: perspective(500px) scaleY(0.7) rotate3d(0, 1 ,1 , 50deg) translateX(700px);
     cursor: pointer;
 }
