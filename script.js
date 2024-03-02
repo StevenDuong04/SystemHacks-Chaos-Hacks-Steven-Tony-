@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
 
     function playVideo() {
-        var newTab = window.open("Music/Indian_Music.mp4", '_blank');
+        var newTab = window.open("Music/everything.mov", '_blank');
         newTab.focus();
         
     }
