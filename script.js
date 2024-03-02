@@ -1,5 +1,11 @@
+/*
+    script.js
+
+    Author: Steven Duong and Tony Wu
+    Date of last modication: March 2, 2024
+*/
 document.addEventListener("DOMContentLoaded", function() {
-    var videoUrls = [
+    var videoUrls = [ 
         "Music/classical.mov",
         "Music/kpop.mov",
         "Music/sleeping.mov",
@@ -11,9 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var randomVideoUrl = videoUrls[randomIndex];
  
         var newTab = window.open(randomVideoUrl, '_blank');
-        if (newTab) {
-            newTab.focus();
-        }
+        newTab.focus();
     }
 
     var buttons = document.querySelectorAll(".grid-container button");
