@@ -5,6 +5,7 @@ body {
 
 .title {
     font-family: Comic Sans MS;
+    text-align: center;
     font-size: 25px;
     color: aqua;
     text-shadow: aqua 1px 0 25px;
@@ -19,13 +20,19 @@ body {
     padding: 10px;
 }
 
-.grid-container > div {
+.grid-container button {
     background-color: rgba(0, 255, 234, 0.8);
     border: 1px  black;
     text-align: center;
-    color: blue;
+    color: aqua;
     font-size: 30px;
-    border-radius: 50px 10px;
+    border-radius: 50px;
     padding: 5px 5px;
     box-shadow: aqua 1px 0 25px;
+    transition: all;
   }
+
+.grid-container button:hover {
+    transform: scale(1.01);
+    cursor: grab;
+}
