@@ -13,14 +13,14 @@ body {
     font-family: Comic Sans MS;
     text-align: center;
     font-size: 40px;
-    color: aqua;
-    text-shadow: aqua 1px 0 25px;
+    color: rgb(252, 94, 255);
+    text-shadow: magenta 1px 0 50px;
     padding: 10px 10px 10px 40px;
 }
 
 .title h2 {
-    text-shadow: rgba(255, 0, 170, 0.8) 10px 0 25px;
-    color: aquamarine;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 0 25px;
+    color: yellow;
 }
 
 .grid-container {
@@ -34,30 +34,26 @@ body {
 
 .grid-container button {
     font-family: Comic Sans MS;
-    background-color: rgba(0, 255, 234, 0.8);
+    background-color: rgb(46, 217, 255);
     border: 1px  black;
     text-align: center;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(9, 33, 250);
     font-size: 35px;
     border-radius: 10px 70px;    
     padding: 50px 50px;
-    box-shadow: aqua 1px 0 25px;
-    transition: transform 1s, color 1s, text-shadow 1s;
+    box-shadow: rgb(46, 217, 255) 1px 0 50px;
+    transition: transform .5s, color 0.5s, text-shadow 0.5s, background-color 0.5s;
   }
 
 .grid-container .playButton:hover {
     transform: perspective(500px) scale(1.1);
-    color: rgba(255, 0, 170, 0.8);
-    text-shadow: rgba(255, 0, 170, 0.8) 1px 0 25px;
+    color: white;
+    text-shadow: white 1px 0 25px;
+    box-shadow: rgb(252, 94, 255) 1px 0 50px;
+    background-color: rgb(252, 94, 255);
     cursor: pointer;
 }
 
-.grid-container .playButton2:hover {
-    transform: perspective(500px) scale(1.1);
-    color: rgba(255, 0, 170, 0.8);
-    text-shadow: rgba(255, 0, 170, 0.8) 1px 0 25px;
-    cursor: pointer;
-}
 
 .BigButton {
     display: flex;
