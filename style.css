@@ -73,6 +73,6 @@ body {
 }
 
 .BigButton button:hover {
-    transform:translateX(500px);
+    transform:translateX(900px);
     cursor: pointer;
 }
