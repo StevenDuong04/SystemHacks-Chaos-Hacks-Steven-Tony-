@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function playVideo() {
         var newTab = window.open("Music/everything.mov", '_blank');
         newTab.focus();
-        
     }
 
     var buttons = document.querySelectorAll(".BigButton button");
