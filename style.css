@@ -12,20 +12,22 @@ body {
 .title {
     font-family: Comic Sans MS;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     color: aqua;
     text-shadow: aqua 1px 0 25px;
     padding: 10px 10px 10px 40px;
 }
 
 .title h2 {
+    text-shadow: rgba(255, 0, 170, 0.8) 10px 0 25px;
     color: aquamarine;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    gap: 60px;
     background-color: black;
     padding: 10px;
 }
@@ -35,21 +37,25 @@ body {
     background-color: rgba(0, 255, 234, 0.8);
     border: 1px  black;
     text-align: center;
-    color: aqua;
-    font-size: 30px;
-    border-radius: 50px;    
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 35px;
+    border-radius: 10px 70px;    
     padding: 50px 50px;
     box-shadow: aqua 1px 0 25px;
-    transition: transform 1s;
+    transition: transform 1s, color 1s, text-shadow 1s;
   }
 
 .grid-container .playButton:hover {
-    transform: perspective(500px) rotateY(45deg);
+    transform: perspective(500px) scale(1.1);
+    color: rgba(255, 0, 170, 0.8);
+    text-shadow: rgba(255, 0, 170, 0.8) 1px 0 25px;
     cursor: pointer;
 }
 
 .grid-container .playButton2:hover {
-    transform: perspective(500px) rotateY(-45deg);
+    transform: perspective(500px) scale(1.1);
+    color: rgba(255, 0, 170, 0.8);
+    text-shadow: rgba(255, 0, 170, 0.8) 1px 0 25px;
     cursor: pointer;
 }
 
@@ -60,19 +66,20 @@ body {
 }
 
 .BigButton button {
-    font-family: Comic Sans Ms;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: red;
     border: 1px black;
     text-align: center;
-    color: black;
-    font-size: 10px;
+    color: white;
+    font-size: 20px;
     border-radius: 50px;
     padding: 5px 5px;
     box-shadow: red 1px 0 25px;
     transition: transform 1s;
+    padding-left: 10px;
 }
 
 .BigButton button:hover {
-    transform:translateX(900px);
+    transform:translateX(1000px);
     cursor: pointer;
 }
